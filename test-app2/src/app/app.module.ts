@@ -12,6 +12,7 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 import { AdminComponent } from './components/shared/nav/admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './components/shared/nav/search/search.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FiltersComponent,
     CartItemComponent,
     ProductItemComponent,
-    AdminComponent
+    AdminComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

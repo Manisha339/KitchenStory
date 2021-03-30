@@ -1,34 +1,37 @@
-<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
-    <label>
-      Product Id:
-      <input type="number" formControlName="productId">
-    </label>
-    <br/>
-    <label>
-      Product Name:
-      <input type="text" formControlName="productName">
-    </label>
-    <br/>
-    <label>
-        Product Description:
-        <input type="text" formControlName="productDesc">
-      </label>
-      <br/>
-      <label>
-        Product Price:
-        <input type="text" formControlName="productPrice">
-      </label>
-      <br/>
-      <label>
-        Product Image:
-        <input type="text" formControlName="productImage">
-      </label>
-      <br/>
-      <br />
-        <span>
-         
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="submit" name="submit">Register</button>
-        </span>
-  </form>
+<div>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <label>
+          Product Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="number" formControlName="productId">
+        </label>
+        <br/>
+        <label>
+          Product Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" formControlName="productName">
+        </label>
+        <br/>
+        <label>
+            Product Description:
+            <input type="text" formControlName="productDesc">
+          </label>
+          <br/>
+          <label>
+            Product Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" formControlName="productPrice">
+          </label>
+          <br/>
+          <label>
+            Product Image:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" formControlName="productImage">
+          </label>
+          <br/>
+          <br />
+            <span>
+             
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <button type="submit" name="submit">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" name="submit">Remove Item</button>
+            </span>
+      </form>
+</div>

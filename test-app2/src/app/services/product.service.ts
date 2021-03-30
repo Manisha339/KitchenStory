@@ -4,8 +4,9 @@ import { Product } from '../models/product';
   providedIn: 'root'
 })
 export class ProductService {
-
+  
   products: Product[] =[
+    
     new Product(1,"product 1","This is the product 1 desc",100,"https://images-na.ssl-images-amazon.com/images/I/51psJ6v1aFL._SX425_.jpg"),
     new Product(2,"product 2","This is the product 2 desc",150,"https://i.ytimg.com/vi/40awGIgvnQ0/maxresdefault.jpg"),
     new Product(3,"product 3","This is the product 3 desc",50,"https://i.insider.com/5ac512497a74af1d008b46ad?width=1000&format=jpeg&auto=webp"),
@@ -17,5 +18,6 @@ export class ProductService {
 
   getProducts(): Product[]{
     return this.products;
+    
   }
 }
